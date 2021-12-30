@@ -6,4 +6,5 @@ RUN apt update \
 RUN pip3 install --no-cache-dir youtube-dl
 
 VOLUME /output
+WORKDIR /output
 ENTRYPOINT ["/usr/local/bin/youtube-dl"]
